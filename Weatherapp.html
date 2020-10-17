@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="city-form">
+        <input type="text" id="city-name" placeholder="Enter your city" />
+      </form>
+      <h3 id="h3-city">LONDON,UK</h3>
+      <p id="current-date">Sunday 20 September</p>
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <img src="images/plainsun.jpg" alt="" />
+        </div>
+        <div class="col-8">
+          <span class="temperature" id="temperature"> 24°C </span>
+          <br />
+          Sunny and a gentle breeze
+        </div>
+      </div>
+      <h5>Next five days</h5>
+      <br />
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Mon</h4>
+          <img src="images/sunandcloud.jpg" class="card-img-top" alt="" />
+          <p class="card-text">
+            <strong>16°</strong> <br />
+            11°
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Tue</h4>
+          <img src="images/sunandcloud.jpg" class="card-img-top" alt="" />
+          <p class="card-text">
+            <strong>18° </strong> <br />
+            14°
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Wed</h4>
+          <img src="images/plainsun.jpg" class="card-img-top" alt="" />
+          <p class="card-text">
+            <strong>20°</strong> <br />
+            15°
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Thu</h4>
+          <img src="images/cloud.png" class="card-img-top" alt="" />
+          <p class="card-text">
+            <strong> 16°</strong> <br />
+            11°
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Fri</h4>
+          <img src="images/cloud.png" class="card-img-top" alt="" />
+          <p class="card-text">
+            <strong>15° </strong> <br />
+            11°
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
